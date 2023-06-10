@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+  font-size: 1.6rem;
+}
+
+.days, .months {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 3.2rem;
+  width: 34.4rem;
+  height: 42.8rem;
+  background-color: white;
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 0.16);
+  border-radius: 1.6rem;
+}
+
+.months {
+  height: 32rem;
+}
+
+.days .month-selector,
+.months .year-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.days .month-selector .month,
+.months .year-selector .year {
+  display: flex;
+  align-items: center;
+}
+
+.days .month-selector .month span,
+.months .year-selector .year span {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+
+.days .calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 28rem;
+  height: 31.6rem;
+}
+
+.days .calendar .week-labels {
+  display: flex;
+  justify-content: center;
+}
+
+.days .calendar .week-labels .week-day {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.08em;
+  color: #666666;
+}
+
+.days .calendar .week-labels .week-day:hover {
+  background-color: #6200EE;
+  color: white;
+}
+
+.days .calendar .month-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 28rem;
+  height: 28rem;
+}
+
+.days .calendar .month-days .week-row {
+  display: flex;
+}
+
+.days .calendar .month-days .week-row .calendar-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #666666;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.days .calendar .month-days .week-row .calendar-day:hover,
+.months .year-months .months-row .calendar-month:hover {
+  background-color: #6200EE;
+  color: white;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.months .year-months {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 28rem;
+  height: 20.8rem;
+}
+
+.months .year-months .months-row {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.months .year-months .months-row .calendar-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.2rem;
+  height: 4rem;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #666666;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
